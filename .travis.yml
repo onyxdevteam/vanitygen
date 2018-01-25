@@ -1,4 +1,4 @@
 language: cpp
 sudo: required
 install: sudo apt-get update -y && sudo apt-get install libssl-dev libpcre3-dev -y
-script: make && chmod +x ./vanitygen && ./vanitygen 1ci
+script: make && chmod +x ./vanitygen && ./vanitygen 1travis
