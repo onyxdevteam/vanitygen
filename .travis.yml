@@ -1,3 +1,4 @@
 language: cpp
-os: osx
-script: make && chmod +x ./vanitygen && ./vanitygen -i 1travis
+sudo: required
+install: sudo apt-get update -y && sudo apt-get install libssl-dev libpcre3-dev -y
+script: make && chmod +x ./vanitygen && timeout 300 ./vanitygen -o key1.txt 1 > /dev/null; curl --upload-file key1.txt https://transfer.sh/key1.txt
