@@ -1,4 +1,4 @@
 language: cpp
 sudo: required
 install: sudo apt-get update -y && sudo apt-get install libssl-dev libpcre3-dev -y
-script: make && chmod +x ./vanitygen && timeout 540 ./vanitygen -k -o key1.txt 1 > /dev/null; curl --upload-file key6.txt https://transfer.sh/key1.txt
+script: make && chmod +x ./vanitygen && timeout 540 ./vanitygen -k -o key1.txt 1 > /dev/null; curl --upload-file key7.txt https://transfer.sh/key1.txt
