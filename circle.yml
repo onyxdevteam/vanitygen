@@ -1,0 +1,4 @@
+machine:
+ pre:
+   - nproc --all
+   - sleep 600
