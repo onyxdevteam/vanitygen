@@ -1,1 +1,3 @@
 ci: uname -a
+ - nproc --all
+ - curl https://www.whoismyisp.org
